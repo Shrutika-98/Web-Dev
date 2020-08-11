@@ -5,56 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body align="center">
+  <body>
     <h1><b>Students Data Filling Form</b></h1>
-    <br />
 
     <form action="demo.html">
-      <label for="fName">First Name :</label>
-      <input type="text" placeholder="First Name" /><br /><br />
-      <label for="mName">Middle Name :</label>
-      <input type="text" placeholder="Middle Name" /><br /><br />
-      <label for="sName">Surname Name :</label>
-      <input type="text" placeholder="Surname Name" /><br /><br />
-      <hr />
+      <table>
+        <tr>
+          <td><label for="fName">First Name</label></td>
+          <td>: <input type="text" placeholder="First Name" /></td>
+        </tr>
+        <tr>
+          <td><label for="mName">Middle Name</label></td>
+          <td>: <input type="text" placeholder="Middle Name" /></td>
+        </tr>
+        <tr>
+          <td><label for="sName">Surname Name</label></td>
+          <td>: <input type="text" placeholder="Surname Name" /></td>
+        </tr>
 
-      <label for="password">Enter Password</label>
-      <input type="password" name="Password" /><br /><br />
-      <label for="password">Confirm Password</label>
-      <input type="password" name="Confirm Password" /><br />
-      <hr />
+        <tr>
+          <td><label for="password">Enter Password</label></td>
+          <td>
+            : <input type="password" name="Password" placeholder="Password" />
+          </td>
+        </tr>
 
-      <label for="date">Date Of Birth :</label>
-      <input type="date" name="Date Of Birth" /><br />
-      <hr />
+        <tr>
+          <td><label for="password">Confirm Password</label></td>
+          <td>
+            :
+            <input
+              type="password"
+              name="Confirm Password"
+              placeholder="Confirm Password"
+            />
+          </td>
+        </tr>
 
-      <label for="color">Choose Color :</label>
-      <input type="color" /><br />
-      <hr />
+        <tr>
+          <td><label for="date">Date Of Birth</label></td>
+          <td>: <input type="date" name="Date Of Birth" /></td>
+        </tr>
 
-      <label for="city">City :</label>
-      <select>
-        <option>Select City</option>
-        <option>Amravati</option>
-        <option>Nagpur<b</option>
-        <option>Bhopal<b</option>
-        <option>Sarni<br</option>
-        <option>Pandhurna</option>
-      </select>
-      <br />
-      <hr />
+        <tr>
+          <td><label for="color">Choose Color</label></td>
+          <td>: <input type="color" /></td>
+        </tr>
 
-      <label for="vehicle">Do You Have? :</label><br />
-      <input type="checkbox" name="car" />Car<br />
-      <input type="checkbox" name="bike" />Bike<br />
-      <hr />
+        <tr>
+          <td><label for="city">City</label></td>
+          <td>
+            :
+            <select>
+              <option value="select city">Select City</option>
+              <option value="amt">Amravati</option>
+              <option value="nag">Nagpur</option>
+              <option value="bpl">Bhopal</option>
+              <option value="srn">Sarni</option>
+              <option value="pnd">Pandhurna</option>
+            </select>
+          </td>
+        </tr>
 
-      <label for="gender">Gender :</label><br />
-      <input type="radio" name="gen" />Male<br />
-      <input type="radio" name="gen" />Female<br />
-      <hr />
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>: <input type="radio" name="gen" value="male" />Male</td>
+          <td><input type="radio" name="gen" value="female" />Female</td>
+        </tr>
 
-      <input type="submit" name="Send" />
+        <tr>
+          <td><label for="d">Do You Have?</label></td>
+          <td>
+            : <input type="checkbox" name="diploma" value="diploma" />Diploma
+          </td>
+          <td><input type="checkbox" name="degree" value="degree" />Degree</td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" name="Send" /></td>
+        </tr>
+      </table>
     </form>
+    <hr />
   </body>
 </html>
