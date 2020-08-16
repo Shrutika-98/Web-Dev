@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Ratione sed officiis beatae tenetur nostrum quasi?</p>
+    <p>Assumenda commodi totam dolorem itaque praesentium enim?</p>
+    <p>Obcaecati nostrum nihil ducimus accusamus, hic dicta?</p>
+    <p>Odio nulla architecto dicta laboriosam rerum nesciunt?</p>
+    <p>Ducimus perspiciatis, sunt distinctio reiciendis animi sit.</p>
+
+    <script>
+      var tag = document.getElementsByTagName("p");
+      console.log("tag ", tag);
+
+      tag[4].innerHTML = "<h1>What the hell are you doing";
+
+      for (var i = 0; i < tag.length; i++) {
+        tag[i].style.color = "green";
+      }
+    </script>
+  </body>
+</html>
